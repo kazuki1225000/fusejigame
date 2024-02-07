@@ -1,64 +1,79 @@
-.container {
+
+/* スタイルの初期化 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* デフォルトのフォントと背景色 */
+  body {
+    font-family: sans-serif;
+    
+  }
+  
+  /* コンテナのスタイル */
+  .container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
   
+  /* テキスト入力ボックスのスタイル */
   #textInput {
-    width: calc(100% - 120px); /* ボタンの幅分を引く */
-    padding: 8px;
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
+  /* ボタンのスタイル */
   button {
-    padding: 8px 12px;
-    margin-left: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
     border: none;
     border-radius: 5px;
+    
     cursor: pointer;
   }
   
-  button:hover {
-    filter: brightness(90%);
-  }
-  
+  /* プレビューのスタイル */
   #preview {
-    margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 20px;
   }
   
-  .preview-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-    padding: 5px;
-    border: 1px solid #eee;
-    border-radius: 5px;
+  /* リセットボタンとシェアボタンを横並びにする */
+  .resetButton,
+  .shareButton {
+    display: inline-block;
   }
   
-  .delete-button {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  /* リセットボタンとシェアボタンのマージン */
+  .resetButton {
+    margin-right: 10px;
   }
   
-  .delete-button:hover {
-    background-color: #c82333;
-  }
+  /* レスポンシブデザインのためのメディアクエリ */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
   
-  .edit-input {
-    width: calc(100% - 40px); /* 削除ボタンの幅分を引く */
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .resetButton,
+    .shareButton {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
   
