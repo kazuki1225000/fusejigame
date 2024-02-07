@@ -10,13 +10,14 @@
 </head>
 <body>
     <div class="container">
-      <input type="text" id="textInput" placeholder="文章を入力">
+      <input type="text" id="textInput" placeholder="入力する">
       <button class="addButton" onclick="addText()">追加</button>
       <button class="hiddenButton" onclick="addHiddenText()">伏せる</button>
       <div id="preview">
         <!-- プレビュー内の各行 -->
       </div>
-      <button class="resetButton" onclick="resetPreview()">リセット</button>
+      <button class="backButton" onclick="removeLastLine()">一つ消す</button>
+      <button class="resetButton" onclick="resetPreview()">全て消す</button>
       <button class="shareButton" onclick="shareOnTwitter()">Xでシェア</button>
     </div>
     <script src="script.js"></script>
