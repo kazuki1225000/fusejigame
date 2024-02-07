@@ -1,0 +1,16 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #preview {
+    margin-top: 20px;
+    background-color: white; /* 背景色を白に設定 */
+  }
+
+  
+  
+  
+  /* Additional styling can be added as needed */
+  
