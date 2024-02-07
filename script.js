@@ -53,3 +53,8 @@ function shareOnTwitter() {
   window.open(twitterUrl, '_blank');
 }
 
+function resetPreview() {
+    textLines = [];
+    renderPreview();
+  }
+  
