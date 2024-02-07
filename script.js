@@ -58,3 +58,9 @@ function resetPreview() {
     renderPreview();
   }
   
+function removeLastLine() {
+        if (textLines.length > 0) {
+          textLines.pop(); // Remove last line
+          renderPreview();
+        }
+      }
