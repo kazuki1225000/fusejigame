@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Text to Image App</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <input type="text" id="textInput" placeholder="Enter text">
-    <button onclick="addText()">追加</button>
-    <button onclick="addHiddenText()">伏せ字</button>
-    <div id="preview"></div>
-    <button onclick="generateImage()">画像を保存</button>
-    <button onclick="shareOnTwitter()">Xでシェア</button>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+      <input type="text" id="textInput" placeholder="文章を入力">
+      <button class="addButton" onclick="addText()">追加</button>
+      <button class="hiddenButton" onclick="addHiddenText()">伏せる</button>
+      <div id="preview">
+        <!-- プレビュー内の各行 -->
+      </div>
+      <button class="resetButton" onclick="resetPreview()">リセット</button>
+      <button class="shareButton" onclick="shareOnTwitter()">Xでシェア</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
