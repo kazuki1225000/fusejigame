@@ -59,14 +59,14 @@
   }
   
   /* レスポンシブデザインのためのメディアクエリ */
-  @media (max-width: 768px) {
+  @media (max-width: 468px) {
     .container {
       padding: 10px;
     }
   
     button {
       display: block;
-      width: 100%;
+      width: 50%;
       margin-bottom: 10px;
     }
   
