@@ -14,7 +14,7 @@
   
   /* コンテナのスタイル */
   .container {
-    max-width: 600px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 20px;
   }
@@ -76,4 +76,9 @@
       margin-bottom: 10px;
     }
   }
+  /* ホバーアニメーション */
+button:hover {
+    background-color: #dddddd; /* ホバー時の背景色 */
+  }
+  
   
