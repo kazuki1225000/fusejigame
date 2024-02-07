@@ -46,7 +46,7 @@ function generateImage() {
   
 
 function shareOnTwitter() {
-  const textToShare = textLines.join('\n') + '\n#伏せ字クイズ'; // Add hashtag to the end of the tweet
+  const textToShare = textLines.join('\n') + '\n#伏せ字クイズ\n'; // Add hashtag to the end of the tweet
   const imageUrl = 'URL_TO_YOUR_GENERATED_IMAGE'; // Replace with actual image URL
   const pageUrl = window.location.href; // Get current page URL
   const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(textToShare)}&url=${encodeURIComponent(pageUrl)}`;
