@@ -2,15 +2,63 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #textInput {
+    width: calc(100% - 120px); /* ボタンの幅分を引く */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    filter: brightness(90%);
   }
   
   #preview {
     margin-top: 20px;
-    background-color: white; /* 背景色を白に設定 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
-
   
+  .preview-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
   
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   
-  /* Additional styling can be added as needed */
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .edit-input {
+    width: calc(100% - 40px); /* 削除ボタンの幅分を引く */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
   
